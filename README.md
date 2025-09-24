@@ -53,7 +53,7 @@ O aplicativo apresenta uma interface clean e objetiva, priorizando a usabilidade
 - **Detalhes**: Tela completa com ingredientes, preparo e avaliações
 
 ## Protótipo
-Acesse o protótipo visual do aplicativo no Figma: PlateCraft - Protótipo
+Acesse o protótipo visual do aplicativo no Figma:  [PlateCraft - Protótipo]([https://exemplo.com](https://www.figma.com/design/Aw0qqlWACh1ZJaazzG7HH7))
 
 ## Estrutura de Dados da API
 [Seção a ser desenvolvida com base no DER fornecido]
