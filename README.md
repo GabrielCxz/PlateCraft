@@ -1,5 +1,4 @@
 # PlateCraft
-# PlateCraft
 **Transforme suas sobras em pratos incríveis!**
 
 ## Descrição do Projeto
