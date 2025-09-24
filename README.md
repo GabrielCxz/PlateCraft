@@ -23,6 +23,12 @@ O PlateCraft permite que os usuários insiram os ingredientes disponíveis em su
 3. **Resultados**: Apresentação de receitas com ingredientes, modo de preparo e imagens
 4. **Avaliações**: Sistema de feedback baseado em avaliações dos sites fonte
 
+## Funcionamento da Pesquisa
+
+A pesquisa no PlateCraft acontece em duas etapas. Primeiro, o aplicativo verifica se os ingredientes informados pelo usuário já possuem receitas correspondentes em nossa base de dados local. Caso existam, os resultados são exibidos imediatamente. Porém, se não houver correspondência, entra em ação o sistema de pesquisa avançada, que utiliza o Google para buscar receitas em sites confiáveis, como **tudogostoso.com.br**, **receitas.globo.com** e **receiteria.com.br**. 
+
+Essa busca é realizada com operadores avançados, garantindo precisão nos resultados. Por exemplo, ao digitar os ingredientes *arroz, milho e manteiga*, a pesquisa é feita da seguinte forma:
+
 ### Fonte de Dados
 O aplicativo utiliza uma base de dados robusta alimentada por três principais fontes:
 - Tudo Gostoso: tudogostoso.com.br
