@@ -56,13 +56,57 @@ O aplicativo apresenta uma interface clean e objetiva, priorizando a usabilidade
 Acesse o protótipo visual do aplicativo no Figma:  [PlateCraft - Protótipo](https://www.figma.com/design/Aw0qqlWACh1ZJaazzG7HH7)
 
 ## Estrutura de Dados da API
-[Seção a ser desenvolvida com base no DER fornecido]
 
-A API do PlateCraft gerencia as seguintes entidades principais:
-- Usuários e preferências
-- Base de receitas e ingredientes
-- Sistema de avaliações e feedback
-- Cache de buscas realizadas
+### Usuários
+| Campo       | Tipo   |
+|-------------|--------|
+| id_usuario  | int PK |
+| nome        | string |
+| email       | string |
+| senha_hash  | string |
+| preferencias| json   |
+
+### Ingredientes
+| Campo          | Tipo   |
+|----------------|--------|
+| id_ingrediente | int PK |
+| nome           | string |
+| categoria      | string |
+
+### Receitas
+| Campo          | Tipo   |
+|----------------|--------|
+| id_receita     | int PK |
+| titulo         | string |
+| modo_preparo   | text   |
+| imagem_url     | string |
+| fonte          | string |
+| avaliacao_media| float  |
+
+### Receita_Ingredientes
+| Campo          | Tipo   |
+|----------------|--------|
+| id_receita     | int FK |
+| id_ingrediente | int FK |
+| quantidade     | string |
+
+### Avaliações
+| Campo        | Tipo   |
+|--------------|--------|
+| id_avaliacao | int PK |
+| id_receita   | int FK |
+| id_usuario   | int FK |
+| nota         | int    |
+| comentario   | string |
+| fonte        | string |
+
+### Cache
+| Campo             | Tipo   |
+|-------------------|--------|
+| id_cache          | int PK |
+| ingredientes_input| string |
+| resultado_ids     | array  |
+| data_busca        | datetime |
 
 ## Justificativa Pessoal
 Este projeto nasceu da necessidade real observada em uma residência com muitos moradores, onde as compras são realizadas em grande quantidade e frequentemente resultam em sobras. O PlateCraft oferece uma solução prática para transformar esses ingredientes "esquecidos" em refeições deliciosas, contribuindo tanto para a economia doméstica quanto para a sustentabilidade.
